@@ -1,4 +1,4 @@
-package top.dannystone.aspectAop;
+package top.dannystone.abstractMethod;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -7,13 +7,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * Description:
  *
  * @author: daniel
- * @creed: focus on the domain !
- * @Time: 2019/4/26 5:41 PM
+ * @creed: keep it simple and stupid !
+ * @Time: 2019/7/28 9:44 PM
  */
 public class Test {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AspectConfig.class);
-        StudentService studentService = (StudentService) context.getBean("studentService");
-        studentService.study();
+//        context.refresh();
+        AbstractService teacherService=  context.getBean(AbstractService.class);
+        teacherService.doSomething();
+
     }
 }
