@@ -8,7 +8,7 @@
     <artifactId>figureout-spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <spring.version>4.1.6.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <aspectj.version>1.8.7</aspectj.version>
         <compiler.version>1.6</compiler.version>
     </properties>
